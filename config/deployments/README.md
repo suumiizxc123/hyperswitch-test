@@ -151,7 +151,7 @@ hyperswitch-drainer:
 You can verify that the server is up and running by hitting the health check endpoint:
 
 ```shell
-curl --head --request GET 'http://localhost:8080/health'
+curl --head --request GET 'http://143.198.152.137:8080/health'
 ```
 
 [architecture]: /docs/architecture.md

@@ -94,7 +94,7 @@ url = "http://localhost:5000"
 
 [cors]
 max_age = 30
-# origins = "http://localhost:8080,http://localhost:9000"
+# origins = "http://143.198.152.137:8080,http://localhost:9000"
 allowed_methods = "GET,POST,PUT,DELETE"
 wildcard_origin = true
 
@@ -146,7 +146,7 @@ datatrans.secondary_base_url = "https://pay.sandbox.datatrans.com/"
 deutschebank.base_url = "https://testmerch.directpos.de/rest-api"
 digitalvirgo.base_url = "https://dcb-integration-service-sandbox-external.staging.digitalvirgo.pl"
 dlocal.base_url = "https://sandbox.dlocal.com/"
-dummyconnector.base_url = "http://localhost:8080/dummy-connector"
+dummyconnector.base_url = "http://143.198.152.137:8080/dummy-connector"
 dwolla.base_url = "https://api-sandbox.dwolla.com"
 ebanx.base_url = "https://sandbox.ebanxpay.com/"
 elavon.base_url = "https://api.demo.convergepay.com/VirtualMerchantDemo/"
@@ -165,7 +165,7 @@ gocardless.base_url = "https://api-sandbox.gocardless.com"
 gpayments.base_url = "https://{{merchant_endpoint_prefix}}-test.api.as1.gpayments.net"
 helcim.base_url = "https://api.helcim.com/"
 hipay.base_url = "https://stage-secure-gateway.hipay-tpp.com/rest/"
-hyperswitch_vault.base_url = "http://localhost:8080"
+hyperswitch_vault.base_url = "http://143.198.152.137:8080"
 hyperwallet.base_url = "https://uat-api.paylution.com"
 hipay.secondary_base_url = "https://stage-secure2-vault.hipay-tpp.com/rest/"
 hipay.third_base_url = "https://stage-api-gateway.hipay.com/"
@@ -1098,7 +1098,7 @@ enabled = false
 global_tenant = { tenant_id = "global", schema = "public", redis_key_prefix = "", clickhouse_database = "default" }
 
 [multitenancy.tenants.public]
-base_url = "http://localhost:8080"
+base_url = "http://143.198.152.137:8080"
 schema = "public"
 accounts_schema = "public"
 redis_key_prefix = ""

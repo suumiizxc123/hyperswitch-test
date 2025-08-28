@@ -28,7 +28,7 @@ The heart of `newman`(with directory support) and `UI-tests`
 Required fields:
 
 - `--admin-api-key` -- Admin API Key of the environment. `test_admin` is the Admin API Key for running locally
-- `--base-url` -- Base URL of the environment. `http://127.0.0.1:8080` / `http://localhost:8080` is the Base URL for running locally
+- `--base-url` -- Base URL of the environment. `http://127.0.0.1:8080` / `http://143.198.152.137:8080` is the Base URL for running locally
 - `--connector-name` -- Name of the connector that you wish to run. Example: `adyen`, `shift4`, `stripe`
 
 Optional fields:

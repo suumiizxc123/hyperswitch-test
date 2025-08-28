@@ -220,7 +220,7 @@ datatrans.secondary_base_url = "https://pay.sandbox.datatrans.com/"
 deutschebank.base_url = "https://testmerch.directpos.de/rest-api"
 digitalvirgo.base_url = "https://dcb-integration-service-sandbox-external.staging.digitalvirgo.pl"
 dlocal.base_url = "https://sandbox.dlocal.com/"
-dummyconnector.base_url = "http://localhost:8080/dummy-connector"
+dummyconnector.base_url = "http://143.198.152.137:8080/dummy-connector"
 dwolla.base_url = "https://api-sandbox.dwolla.com"
 ebanx.base_url = "https://sandbox.ebanxpay.com/"
 elavon.base_url = "https://api.demo.convergepay.com/VirtualMerchantDemo/"
@@ -239,7 +239,7 @@ gocardless.base_url = "https://api-sandbox.gocardless.com"
 gpayments.base_url = "https://{{merchant_endpoint_prefix}}-test.api.as1.gpayments.net"
 helcim.base_url = "https://api.helcim.com/"
 hipay.base_url = "https://stage-secure-gateway.hipay-tpp.com/rest/"
-hyperswitch_vault.base_url = "http://localhost:8080"
+hyperswitch_vault.base_url = "http://143.198.152.137:8080"
 hyperwallet.base_url = "https://uat-api.paylution.com"
 hipay.secondary_base_url = "https://stage-secure2-vault.hipay-tpp.com/rest/"
 hipay.third_base_url = "https://stage-api-gateway.hipay.com/"
@@ -442,7 +442,7 @@ paypal = { currency = "USD,INR", country = "US" }
 
 [cors]
 max_age = 30                            # Maximum time (in seconds) for which this CORS request may be cached.
-origins = "http://localhost:8080"       # List of origins that are allowed to make requests.
+origins = "http://143.198.152.137:8080"       # List of origins that are allowed to make requests.
 allowed_methods = "GET,POST,PUT,DELETE" # List of methods that are allowed
 wildcard_origin = false                 # If true, allows any origin to make requests
 
@@ -1101,7 +1101,7 @@ enabled = false
 global_tenant = { tenant_id = "global", schema = "public", redis_key_prefix = "", clickhouse_database = "default"}
 
 [multitenancy.tenants.public]
-base_url = "http://localhost:8080"               # URL of the tenant
+base_url = "http://143.198.152.137:8080"               # URL of the tenant
 schema = "public"                                # Postgres db schema
 accounts_schema = "public"
 redis_key_prefix = ""                            # Redis key distinguisher
@@ -1164,7 +1164,7 @@ billing_connectors_which_require_payment_sync = "stripebilling, recurly" # List 
 [open_router]
 dynamic_routing_enabled = true                          # Enable or disable Open Router for dynamic routing
 static_routing_enabled = true           # Enable or disable Open Router for static routing
-url = "http://localhost:8080"           # Open Router URL
+url = "http://143.198.152.137:8080"           # Open Router URL
 
 [grpc_client.unified_connector_service]
 base_url = "http://localhost:8000"      # Unified Connector Service Base URL
