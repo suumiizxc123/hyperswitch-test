@@ -150,7 +150,7 @@ Once your connector logic is implemented, this environment lets you ensure it be
 Once the Hyperswitch Router Service is running, you can verify it's operational by checking the health endpoint in a separate terminal window:
 
 ```bash
-curl --head --request GET 'http://165.232.152.81:8080/health'
+curl --head --request GET 'http://localhost:8080/health'
 ```
 > **Action Item**  
 > After creating the connector, run a health check to ensure everything is working smoothly.
@@ -1209,7 +1209,7 @@ cd cypress-tests
 ```bash
 export CONNECTOR_AUTH_FILE_PATH="/absolute/path/to/your/auth.toml"
 export CYPRESS_CONNECTOR="your_connector_name"
-export CYPRESS_BASEURL="http://165.232.152.81:8080"
+export CYPRESS_BASEURL="http://localhost:8080"
 export CYPRESS_ADMINAPIKEY="test_admin"
 export DEBUG=cypress:cli
 ```
@@ -1231,13 +1231,13 @@ cargo r
 2. **Verify Server Health**
 
 ```bash 
-curl --head --request GET 'http://165.232.152.81:8080/health'
+curl --head --request GET 'http://localhost:8080/health'
 ```
   
 **Detailed health check**
 
 ```bash
-curl --request GET 'http://165.232.152.81:8080/health/ready'
+curl --request GET 'http://localhost:8080/health/ready'
 ```
 
 3. **Run Connector Tests for Your Connector**

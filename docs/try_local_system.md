@@ -96,7 +96,7 @@ Check the Table Of Contents to jump to the relevant section.
 6. Verify that the server is up and running by hitting the health endpoint:
 
    ```shell
-   curl --head --request GET 'http://165.232.152.81:8080/health'
+   curl --head --request GET 'http://localhost:8080/health'
    ```
 
    If the command returned a `200 OK` status code, proceed with
@@ -543,7 +543,7 @@ Once you're done with configuring the application, proceed with
 2. Verify that the server is up and running by hitting the health endpoint:
 
    ```shell
-   curl --head --request GET 'http://165.232.152.81:8080/health'
+   curl --head --request GET 'http://localhost:8080/health'
    ```
 
    If the command returned a `200 OK` status code, proceed with
@@ -558,7 +558,7 @@ Once you're done with configuring the application, proceed with
    ["Variables" tab][variables].
    Update the value under the "current value" column for the `baseUrl` variable
    to have the hostname and port of the locally running server
-   (`http://165.232.152.81:8080` by default).
+   (`http://localhost:8080` by default).
 
 3. While on the "Variables" tab, add the admin API key you configured in the
    application configuration under the "current value" column for the

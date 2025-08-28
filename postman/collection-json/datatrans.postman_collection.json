@@ -3780,7 +3780,7 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "http://165.232.152.81:8080",
+			"value": "http://localhost:8080",
 			"type": "string"
 		},
 		{

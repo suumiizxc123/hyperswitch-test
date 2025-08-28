@@ -89,7 +89,7 @@ fn payment_method_details() -> Option<types::PaymentsAuthorizeData> {
         }),
         currency: enums::Currency::USD,
         amount: 100, // $1.00
-        router_return_url: String::from("http://165.232.152.81:8080/"),
+        router_return_url: String::from("http://localhost:8080/"),
         payment_method_type: Some(enums::PaymentMethodType::Credit),
         ..utils::PaymentAuthorizeType::default().0
     })

@@ -91,7 +91,7 @@ After setup, you can manually control services:
 
 After running the setup script:
 
-1. Verify the server is running: `curl --head --request GET 'http://165.232.152.81:8080/health'`.
+1. Verify the server is running: `curl --head --request GET 'http://localhost:8080/health'`.
 2. Access the Control Center at `http://localhost:9000`.
 3. Configure payment connectors in the Control Center.
 4. Try a test payment using the demo store.
