@@ -277,7 +277,7 @@ pub trait SeleniumTest {
                         let configs = self.get_configs().automation_configs.unwrap();
                         let hs_base_url = configs
                             .hs_base_url
-                            .unwrap_or_else(|| "http://143.198.152.137:8080".to_string());
+                            .unwrap_or_else(|| "http://165.232.152.81:8080".to_string());
                         let configs_url = configs.configs_url.unwrap();
                         let hs_api_keys = configs.hs_api_keys.unwrap();
                         let test_env = configs.hs_test_env.unwrap();

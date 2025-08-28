@@ -58,7 +58,7 @@ merchant_ids_send_payment_id_as_connector_request_id = [
 
 [cors]
 max_age = 30                            # Maximum time (in seconds) for which this CORS request may be cached.
-origins = "http://143.198.152.137:8080"       # List of origins that are allowed to make requests.
+origins = "http://165.232.152.81:8080"       # List of origins that are allowed to make requests.
 allowed_methods = "GET,POST,PUT,DELETE" # List of methods that are allowed
 wildcard_origin = false                 # If true, allows any origin to make requests
 
@@ -323,7 +323,7 @@ enabled = false
 global_tenant = { tenant_id = "global", schema = "public", redis_key_prefix = "", clickhouse_database = "default"}
 
 [multitenancy.tenants.public]
-base_url = "http://143.198.152.137:8080"
+base_url = "http://165.232.152.81:8080"
 schema = "public"
 accounts_schema = "public"
 redis_key_prefix = ""
@@ -375,7 +375,7 @@ background_color = "#FFFFFF"                     # Background color of email bod
 base_url = "http://localhost:8000" #base url to call unified authentication service
 
 [connectors.hyperswitch_vault] # Hyperswitch Vault Configuration
-base_url = "http://143.198.152.137:8080" # base url to call hyperswitch vault service
+base_url = "http://165.232.152.81:8080" # base url to call hyperswitch vault service
 
 [clone_connector_allowlist]
 merchant_ids = "merchant_ids"           # Comma-separated list of allowed merchant IDs

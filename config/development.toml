@@ -259,7 +259,7 @@ datatrans.secondary_base_url = "https://pay.sandbox.datatrans.com/"
 deutschebank.base_url = "https://testmerch.directpos.de/rest-api"
 digitalvirgo.base_url = "https://dcb-integration-service-sandbox-external.staging.digitalvirgo.pl"
 dlocal.base_url = "https://sandbox.dlocal.com/"
-dummyconnector.base_url = "http://143.198.152.137:8080/dummy-connector"
+dummyconnector.base_url = "http://165.232.152.81:8080/dummy-connector"
 dwolla.base_url = "https://api-sandbox.dwolla.com"
 ebanx.base_url = "https://sandbox.ebanxpay.com/"
 elavon.base_url = "https://api.demo.convergepay.com/VirtualMerchantDemo/"
@@ -278,7 +278,7 @@ gocardless.base_url = "https://api-sandbox.gocardless.com"
 gpayments.base_url = "https://{{merchant_endpoint_prefix}}-test.api.as1.gpayments.net"
 helcim.base_url = "https://api.helcim.com/"
 hipay.base_url = "https://stage-secure-gateway.hipay-tpp.com/rest/"
-hyperswitch_vault.base_url = "http://143.198.152.137:8080"
+hyperswitch_vault.base_url = "http://165.232.152.81:8080"
 hyperwallet.base_url = "https://uat-api.paylution.com"
 hipay.secondary_base_url = "https://stage-secure2-vault.hipay-tpp.com/rest/"
 hipay.third_base_url = "https://stage-api-gateway.hipay.com/"
@@ -379,7 +379,7 @@ workers = 1
 
 [cors]
 max_age = 30
-# origins = "http://143.198.152.137:8080,http://localhost:9000"
+# origins = "http://165.232.152.81:8080,http://localhost:9000"
 allowed_methods = "GET,POST,PUT,DELETE"
 wildcard_origin = true
 
@@ -399,7 +399,7 @@ sts_role_session_name = ""
 password_validity_in_days = 90
 two_factor_auth_expiry_in_secs = 300
 totp_issuer_name = "Hyperswitch Dev"
-base_url = "http://143.198.152.137:8080"
+base_url = "http://165.232.152.81:8080"
 force_two_factor_auth = false
 force_cookies = true
 
@@ -1231,7 +1231,7 @@ enabled = false
 global_tenant = { tenant_id = "global", schema = "public", redis_key_prefix = "global", clickhouse_database = "default" }
 
 [multitenancy.tenants.public]
-base_url = "http://143.198.152.137:8080"
+base_url = "http://165.232.152.81:8080"
 schema = "public"
 accounts_schema = "public"
 redis_key_prefix = ""
@@ -1283,7 +1283,7 @@ click_to_pay = {connector_list = "adyen, cybersource, trustpay"}
 [open_router]
 dynamic_routing_enabled = false
 static_routing_enabled = false
-url = "http://143.198.152.137:8080"
+url = "http://165.232.152.81:8080"
 
 [l2_l3_data_config]
 enabled = "true"

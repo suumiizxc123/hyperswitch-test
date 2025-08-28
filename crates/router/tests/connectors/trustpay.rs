@@ -65,7 +65,7 @@ fn get_default_payment_authorize_data() -> Option<types::PaymentsAuthorizeData> 
             ..utils::CCardType::default().0
         }),
         browser_info: Some(get_default_browser_info()),
-        router_return_url: Some(String::from("http://143.198.152.137:8080")),
+        router_return_url: Some(String::from("http://165.232.152.81:8080")),
         ..utils::PaymentAuthorizeType::default().0
     })
 }

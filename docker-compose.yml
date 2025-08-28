@@ -104,7 +104,7 @@ services:
     labels:
       logs: "promtail"
     healthcheck:
-      test: curl --fail http://143.198.152.137:8080/health || exit 1
+      test: curl --fail http://165.232.152.81:8080/health || exit 1
       interval: 5s
       retries: 3
       start_period: 5s
@@ -186,7 +186,7 @@ services:
       - ENABLE_LOGGING=true
       - SDK_ENV=local
       - ENV_LOGGING_URL=http://localhost:3103
-      - ENV_BACKEND_URL=http://143.198.152.137:8080
+      - ENV_BACKEND_URL=http://165.232.152.81:8080
     labels:
       logs: "promtail"
 
@@ -502,6 +502,6 @@ services:
       - HYPERSWITCH_SECRET_KEY=placeholder_api_key
       - PROFILE_ID=placeholder_profile_id
       - HYPERSWITCH_CLIENT_URL=http://localhost:9050
-      - HYPERSWITCH_SERVER_URL=http://143.198.152.137:8080
+      - HYPERSWITCH_SERVER_URL=http://165.232.152.81:8080
     labels:
       logs: "promtail"

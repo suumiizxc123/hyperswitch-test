@@ -152,7 +152,7 @@ jobs:
       - name: Run Tests
         if: ${{ ((github.event_name == 'pull_request') && (github.event.pull_request.head.repo.full_name == github.event.pull_request.base.repo.full_name)) || (github.event_name == 'merge_group')}}
         env:
-          BASE_URL: "http://143.198.152.137:8080"
+          BASE_URL: "http://165.232.152.81:8080"
           GATEWAY_MERCHANT_ID: ${{ secrets.STRIPE_GATEWAY_MERCHANT_ID }}
           GPAY_CERTIFICATE: ${{ secrets.STRIPE_GPAY_CERTIFICATE }}
           GPAY_CERTIFICATE_KEYS: ${{ secrets.STRIPE_GPAY_CERTIFICATE_KEYS }}

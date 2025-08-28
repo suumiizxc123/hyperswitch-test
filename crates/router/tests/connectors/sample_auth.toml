@@ -137,7 +137,7 @@ api_key = "API Key"
 key1 = "Profile ID"
 
 [automation_configs]
-hs_base_url="http://143.198.152.137:8080"
+hs_base_url="http://165.232.152.81:8080"
 hs_test_browser="firefox"
 chrome_profile_path=""
 firefox_profile_path=""

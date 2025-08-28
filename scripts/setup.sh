@@ -296,7 +296,7 @@ start_services() {
 }
 
 check_services_health() {
-    HYPERSWITCH_BASE_URL="http://143.198.152.137:8080"
+    HYPERSWITCH_BASE_URL="http://165.232.152.81:8080"
     HYPERSWITCH_HEALTH_URL="${HYPERSWITCH_BASE_URL}/health"
     HYPERSWITCH_DEEP_HEALTH_URL="${HYPERSWITCH_BASE_URL}/health/ready"
     local is_success=true
@@ -334,7 +334,7 @@ print_access_info() {
         printf "  • ${GREEN}${BOLD}Control Center${NC}: ${BLUE}${BOLD}http://localhost:9000${NC}\n"
     fi
 
-    printf "  • ${GREEN}${BOLD}App Server${NC}: ${BLUE}${BOLD}http://143.198.152.137:8080${NC}\n"
+    printf "  • ${GREEN}${BOLD}App Server${NC}: ${BLUE}${BOLD}http://165.232.152.81:8080${NC}\n"
 
     if [ "$PROFILE" = "full" ]; then
         printf "  • ${GREEN}${BOLD}Monitoring (Grafana)${NC}: ${BLUE}${BOLD}http://localhost:3000${NC}\n"

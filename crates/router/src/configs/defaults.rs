@@ -22,7 +22,7 @@ impl Default for super::settings::Server {
 impl Default for super::settings::CorsSettings {
     fn default() -> Self {
         Self {
-            origins: HashSet::from_iter(["http://143.198.152.137:8080".to_string()]),
+            origins: HashSet::from_iter(["http://165.232.152.81:8080".to_string()]),
             allowed_methods: HashSet::from_iter(
                 ["GET", "PUT", "POST", "DELETE"]
                     .into_iter()
